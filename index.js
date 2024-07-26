@@ -12,7 +12,7 @@ app.use(bodyParser.urlencoded({ extended: true}));
 app.get("/", (req, res) => {
     global.checkBlog = null;
     global.inUsername = null;
-    res.render("home.ejs", {
+    res.render("index.ejs", {
         username: inUsername,
         checkBlog : checkBlog
     });
@@ -38,7 +38,7 @@ app.post("/login", (req, res) => {
 
     
     if (inUsername_check === inUsername && inPassword_check === inPassword) {
-        res.render("home.ejs", {
+        res.render("index.ejs", {
             username: inUsername_check
         });
     }
@@ -56,7 +56,7 @@ app.post("/blog", (req, res) => {
     global.blogText = req.body.blogText;
     checkBlog = true;
 
-    res.render("home.ejs", {
+    res.render("index.ejs", {
         username: inUsername,
         topic : topic,
         blogText : blogText,
