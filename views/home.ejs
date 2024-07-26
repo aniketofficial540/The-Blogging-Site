@@ -1,0 +1,84 @@
+<%- include("header") %>
+
+    <div class="nav-bar">
+        <a class="nav-links" href="#">Home</a>
+        <% if (username){ %>
+            <a class="nav-links" href="/blog">Blog</a>
+
+        <% } else {%>
+            <a class="nav-links" href="#">Blog</a>
+        <% } %>
+        <a class="nav-links" href="#">Portfolio</a>
+        <% if (username){ %>
+            <a class="nav-links" href="#"><i class="fa-solid fa-user"></i><%=username%> </a>
+
+        <% } else {%>
+            <a class="nav-links" href="/signup">Sign up</a>
+        <% } %>
+    </div>
+
+    <div class="body-page1">
+        <div class="body-page1-left">
+            <h1 class="header-text">Bethany Jones</h1>
+            <p class="header-para">Lorem ipsum dolor sit amet consectetur adipisicing elit. Cum aliquid, error iusto
+                delectus sint ut reprehenderit, consequuntur aut sed temporibus dolore quia dicta? Accusantium nemo,
+                iste voluptatibus tempora ex nulla fugiat voluptates quod a quasi excepturi eius alias amet maiores.
+            </p>
+            <div class="header-footer">
+                <a href="#"> <b>@bethnayjones</b> </a>
+                <div class="header-footer-links">
+                    <a href="#"><i class="fa-brands fa-instagram"></i></a>
+                    <a href="#"><i class="fa-brands fa-facebook"></i></a>
+                    <a href="#"><i class="fa-brands fa-twitter"></i></a>
+                    <a href="#"><i class="fa-brands fa-linkedin"></i></a>
+                </div>
+            </div>
+        </div>
+        <img src="Images/landing-page img.webp" class="body-page1-right" alt="image1">
+    </div>
+
+    <div class="body-page2">
+        <div class="body-page2-right-container">
+            <div class="body-page2-right"></div>
+        </div>
+
+        <div class="body-page1-left">
+            <h1 class="header-text">James Caleb</h1>
+            <p class="header-para">Lorem ipsum dolor sit amet consectetur adipisicing elit. Cum aliquid, error iusto
+                delectus sint ut reprehenderit, consequuntur aut sed temporibus dolore quia dicta? Accusantium nemo,
+                iste voluptatibus tempora ex nulla fugiat voluptates quod a quasi excepturi eius alias amet maiores.
+            </p>
+            <div class="header-footer2">
+                <a href="#"> <b>@bethnayjones</b> </a>
+                <div class="header-footer-links">
+                    <a href="#"><i class="fa-brands fa-instagram"></i></a>
+                    <a href="#"><i class="fa-brands fa-facebook"></i></a>
+                    <a href="#"><i class="fa-brands fa-twitter"></i></a>
+                    <a href="#"><i class="fa-brands fa-linkedin"></i></a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <% if(checkBlog){ %>
+        <div class="body-page1">
+            <div class="body-page1-left">
+                <h1 class="header-text"><%= topic %></h1>
+                <p class="header-para">
+                    <%= blogText %>
+                </p>
+                <div class="header-footer">
+                    <a href="#"> <b>@ <%= username %></b> </a>
+                    <div class="header-footer-links">
+                        <a href="#"><i class="fa-brands fa-instagram"></i></a>
+                        <a href="#"><i class="fa-brands fa-facebook"></i></a>
+                        <a href="#"><i class="fa-brands fa-twitter"></i></a>
+                        <a href="#"><i class="fa-brands fa-linkedin"></i></a>
+                    </div>
+                </div>
+            </div>
+            <img src="Images/landing-page img.webp" class="body-page1-right" alt="image1">
+        </div>
+    <% } %>
+
+    <%- include("footer") %>

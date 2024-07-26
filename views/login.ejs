@@ -1,0 +1,20 @@
+<%- include("header.ejs") %>
+
+<div class="styiling-body">
+    <div class="styiling-container">
+        <h2 class="styiling-heading">LOGIN</h2>
+        <form action="/login" method="post">
+            <label class="label" for="username">Username:</label>
+            <input type="text" class="styiling-username-password" name="username" required>
+
+            <label class="label" for="password">Password:</label>
+            <input type="password" class="styiling-username-password" name="password" required>
+
+            <button class="styiling-submit-button" type="submit">Login</button>
+        </form>
+    </div>
+</div>
+
+<%- include("footer.ejs") %>
+
+

@@ -1,0 +1,20 @@
+<%- include("header.ejs") %>
+
+<div class="styiling-body">
+    <div class="styiling-container">
+        <h2 class="styiling-heading">BLOG</h2>
+        <form action="/blog" method="post">
+            <label class="label" for="username">Your Topic  </label>
+            <input type="text" class="styiling-username-password" name="topic" required>
+
+            <label class="label" for="text">Your Blog</label>
+            <input type="text" class="styiling-username-password" name="blogText" required>
+
+            <button class="styiling-submit-button" type="submit">Submit</button>
+        </form>
+    </div>
+</div>
+
+<%- include("footer.ejs") %>
+
+

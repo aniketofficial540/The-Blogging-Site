@@ -1,0 +1,176 @@
+* {
+    margin: 0;
+    padding: 0;
+    text-decoration: none;
+    color: #231e21;
+}
+
+body {
+    background-color: #c4b7aa;
+}
+
+.nav-bar {
+    height: 70px;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+
+}
+
+.nav-links {
+    font-size: 1.5rem;
+    font-weight: 500;
+    /* color: black; */
+    font-family: "Kanit", sans-serif;
+
+}
+
+.body-page1 {
+    height: 500px;
+    margin: 40px 40px 80px 40px;
+    padding: 10px;
+    border: 2px solid #958e8a;
+    display: flex;
+    flex-direction: row;
+}
+
+.body-page2 {
+    height: 500px;
+    margin: 80px 40px 40px 40px;
+    padding: 10px;
+    border: 2px solid #958e8a;
+    display: flex;
+    flex-direction: row;
+}
+
+.body-page1-left {
+    height: 100%;
+    width: 72%;
+    display: flex;
+    flex-direction: column;
+
+}
+.body-page1-right {
+    height: 100%;
+    width: 28%;
+    object-fit: fill;
+}
+.body-page2-right-container {
+    height: 100%;
+    width: 24%;
+    display: flex;
+    align-items: center;
+}
+.body-page2-right{
+    border-radius: 50%;
+    height: 50%;
+    width: 100%;
+    background-color: black;
+    background-image: url("Images/page 2 img.webp");
+    background-size: cover;
+}
+.body-page1-right {
+    /* height: 50%; */
+    width: 28%;
+    /* object-fit: fill; */
+}
+
+.header-text {
+    left: 30px;
+    font-family: "Tangerine", cursive;
+    font-size: 10rem;
+    padding: 30px 0 0 30px;
+    height: 40%;
+}
+.header-para {
+    text-align: start;
+    padding: 30px 0 0 30px;
+    height: 50%;
+    font-family: "Kanit", sans-serif;
+    
+}
+
+.header-footer {
+    display: flex;
+    flex-direction: column;
+    padding: 30px 0 0 30px;
+}
+.header-footer2 {
+    display: flex;
+    flex-direction: column;
+    padding: 30px 0 0 30px;
+    align-items: end;
+}
+
+a > b {
+    font-size: 0.9rem;
+    /* color: black; */
+}
+.header-footer-links{
+    font-size: 1.3rem;
+    display: flex;
+    margin: 15px 0 0 0;
+    gap: 10px;
+}
+
+footer {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+footer > h2  {
+    height: 60px;
+    font-size: 1.3rem;
+    font-family: "Kanit", sans-serif;
+    font-weight: 500;
+}
+
+
+/* signup styling */
+.styiling-body {
+    height: 100vh;
+    width: 100vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.styiling-container {
+    background-color: #a49588;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    width: 30vw;
+    text-align: center;
+}
+
+.styiling-heading {
+    font-family: "Kanit", sans-serif;
+    margin-bottom: 20px;
+}
+
+.label {
+    display: block;
+    margin-bottom: 5px;
+}
+
+.styiling-username-password {
+    width: 90%;
+    padding: 10px;
+    margin-bottom: 15px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+.styiling-submit-button {
+    background-color: #6b5b53;
+    color: white;
+    padding: 10px 15px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.styiling-submit-button:hover {
+    background-color: #574e46;
+}
