@@ -37,5 +37,3 @@ User Authentication: Implemented secure user authentication and session manageme
 This project was a fantastic learning experience, and I’m excited about the new skills I’ve acquired. I look forward to applying this knowledge in future projects and continuing to grow as a developer.
 
 Feel free to check out the project and let me know your thoughts! 🌐
-
-hashtag#WebDevelopment hashtag#BackendDevelopment hashtag#NodeJS hashtag#ExpressJS hashtag#JavaScript hashtag#HTML hashtag#CSS hashtag#EJS hashtag#Coding hashtag#Learning hashtag#Projects
